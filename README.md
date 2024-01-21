@@ -12,10 +12,10 @@ Third-year of studies project, in the subject of Programming Internet Applicatio
   <li>
     <dt><h4>User</h4><dt>
     <dd>
-     - Users should be able to log in/create an account;
-     - After logging in,  the user can browse through the gallery/view images which are posted by special user type - Artist;
-     - The users should be able to rate the images (on a scale of 1 to 5) as well as leave comments on images;
-     - The users should also have an option to share an image of their liking;
+     - Users should be able to log in/create an account;<br>
+     - After logging in,  the user can browse through the gallery/view images which are posted by special user type - Artist;<br>
+     - The users should be able to rate the images (on a scale of 1 to 5) as well as leave comments on images;<br>
+     - The users should also have an option to share an image of their liking;<br>
     </dd>
     </li>
 </dl></ul>
