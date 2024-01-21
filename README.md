@@ -27,4 +27,13 @@ Third-year of studies project, in the subject of Programming Internet Applicatio
      - They can also keep track of statistical data about how many views their images have and the ratings of that image;<br>
     </dd>
     </li>
+  <li>
+    <dt><h4>Administrator</h4><dt>
+    <dd>
+      - Admins have access to the administration table, from which they can control the entire platform;<br>
+     - Admins can add new artists, remove inappropriate images and comments;<br>
+     - Keep track of statistical data in order to get a grasp of a certain artist's or image's popularity;<br>
+     - Block users that void the guidelines.<br>
+    </dd>
+    </li>
 </dl></ul>
