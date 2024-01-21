@@ -37,6 +37,8 @@ Third-year of studies project, in the subject of Programming Internet Applicatio
     </dd>
     </li>
 </dl></ul>
+<hr>
+<h2>Languages</h2>
 <h3>PHP</h3>
 <ul><dl>
     <li>
