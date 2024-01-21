@@ -4,7 +4,7 @@ Third-year of studies project, in the subject of Programming Internet Applicatio
 <h2>Details</h2>
 <h3>Description</h3>
 <p>
-  The goal of this project is to create a fully-functioning website which will act as a gallery. Users should be able to interact with one another in the sense of rating images, saving them as favorites, sharing them and leaving their own opinions in the form of comments.
+  The goal of this project is to create a fully-functioning website which will act as a gallery. Users should be able to interact with one another in the sense of rating images, saving them as favorites, sharing them and leaving their own opinions in the form of comments. About programming languages that should be used, PHP and MySQL are listed for the back-end, while HTML, CSS, JavaScript, JQuery and Bootstrap are the ones listed for the front-end.
 </p>
 <h3>Users</h3>
 <p>There should esentially be three levels of users, with different functionalities:</p>
