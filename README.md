@@ -9,6 +9,32 @@ Users can explore the gallery anonymously by clicking the **“Incognito”** bu
 
 During account creation, users can choose to register as either a **regular user** or an **artist**. Only artists have the ability to upload images. All logged-in users can interact with public images, while only artists can manage the privacy settings of their own images.
 
+## Running the Website Locally
+
+This project is built to run using **XAMPP** and **localhost**. Follow the steps below to try it out on your machine:
+
+### 1. Download and Set Up the Project
+- Download or clone the repository.
+- Move the entire project folder into your XAMPP `htdocs` directory: /xampp/htdocs/your_project_folder/
+
+### 2. Start XAMPP
+- Open the **XAMPP Control Panel**.
+- Start **Apache**.
+- Start **MySQL** (if your project uses a database).
+
+### 3. Open the Website
+- In your web browser, go to: http://localhost/your_project_folder/
+
+### 4. Set Up the Database
+- Open **phpMyAdmin** by visiting: http://localhost/phpmyadmin
+- Create a new database (e.g., `my_project_db`).
+- Import the SQL file provided with the project:
+  1. Click on the newly created database.
+  2. Go to the **Import** tab.
+  3. Upload and run the `.sql` file (usually found in the root or `database/` folder of the project).
+
+**Note:** Ensure that the database connection details in your configuration file (e.g., `Database.php` or `config.inc.php`) match the name and credentials of the database you just created.
+
 ---
 
 ## User Types
