@@ -33,7 +33,6 @@ This website functions as a digital gallery where users can explore, rate, and c
 
 ### Front End
 - **HTML**, **CSS**, **JavaScript**
-- **jQuery** for dynamic interactivity.
 - **Bootstrap** for responsive design.
 
 ## Features Implemented in PHP
