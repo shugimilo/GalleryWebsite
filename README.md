@@ -72,6 +72,19 @@ When a user clicks on an image in order to view it, a bootstrap popup appears, d
 - Comments are interactable - if the commenter's profile picture is clicked, the user is led to their profile.
 - Comments also contain information about the poster's username and date created.
 
+### PHPMailer Implementation
+The website has a password recovery feature. If the "I forgot my password" button is clicked, the user will be prompted to write their username. Afterwards, if the username exists in the database, the service will send a 6 digit code to the user's e-mail address.
+Typing the correct code prompts the user to set a new password. If they repeat the password successfully, the new one is hashed in the database and the user can proceed to the login page.
+This feature has been implemented through PHPMailer. Instructions on how to set it up in a new project can be found in [this video](https://www.youtube.com/watch?v=GmCFeLhA-fA).
+
+---
+
+## Demonstration
+
+
+
+---
+
 ## Security
 
 This application implements several essential security practices to protect user data and maintain safe sessions:
