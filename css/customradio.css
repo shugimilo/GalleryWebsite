@@ -1,0 +1,43 @@
+.custom_radio {
+    display: none;
+}
+
+.custom_radio + label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+}
+
+.custom_radio + label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.custom_radio:checked + label:before {
+    background-color: #000;
+}
+
+.custom_radio + label:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    visibility: hidden;
+}
+
+.custom_radio:checked + label:after {
+    visibility: visible;
+}

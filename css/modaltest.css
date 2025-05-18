@@ -1,0 +1,235 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.modal-split {
+  display: flex;
+}
+
+.title {
+  font-family: 'SisterSpray';
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+
+.custom_input {
+  margin-top: 4px;
+  border: 0px;
+  border-bottom: 3px solid white;
+  background-color: black;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+}
+
+.modal-split .modal-body {
+  padding: 0;
+  background-color: black;
+}
+
+.modal-content {
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn-close {
+  color: white;
+}
+
+.stats {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  max-width: 90%;
+}
+
+.modal-split .description,
+.modal-split .stats{
+  padding: 5px;
+  color: white;
+}
+ 
+.comment_section {
+  max-height: 300px;
+  max-width: 90%;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+
+.modal-split .modal-title {
+  margin-bottom: 0;
+  color: white;
+}
+
+.description > p {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.modal-split .stats span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.comment_section > .comment_container {
+  height: 10%;
+  padding: 1px;
+  margin: 1px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid white;
+  background-color: #ffff;
+  color: black;
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.comment_profilepic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.comment_body p {
+  margin-bottom: 0;
+  text-align: left;
+  padding: 7px;
+}
+
+.time_of_posting {
+  padding-left: 7px;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.owner_info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.owner_profile_picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.custom_modal_button {
+  border: none;
+}
+
+.comment_input {
+  text-align: left;
+}
+
+.comment_input label {
+  text-align: left;
+}
+
+::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(63, 63, 63);
+  width: 10px;
+  height: 10px;
+  padding-right: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(29, 29, 29);
+}
+
+.stats_img {
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.stats_img:hover {
+  transform: scale(1.1);
+}
+
+.round_button {
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+  align-self: center;
+}
+
+.owner_info, .frame {
+  align-items: center;
+  margin-bottom: 15px;
+  text-decoration: none;
+  background-color: black;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid white;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 1), 
+              2px 2px 0px 0px rgba(255, 255, 255, 1), 
+              3px 3px 0px 0px rgba(255, 255, 255, 1), 
+              4px 4px 0px 0px rgba(255, 255, 255, 1), 
+              5px 5px 0px 0px rgba(255, 255, 255, 1);
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.owner_info:active, .frame:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .owner_info, .frame {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.image, .modal-content {
+  border: 2px solid white;
+  box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 1), 
+  2px 2px 0px 0px rgba(255, 255, 255, 1), 
+  3px 3px 0px 0px rgba(255, 255, 255, 1), 
+  4px 4px 0px 0px rgba(255, 255, 255, 1), 
+  5px 5px 0px 0px rgba(255, 255, 255, 1);
+}
+
+hr {
+  border: 2px solid white;
+}
+
+.preview_modal form{
+  align-self: center;
+}
+
+.edit_button{
+  display: block;
+  border-radius: 15px;
+}
+
+.comment_button {
+  border: none;
+  color: white;
+}

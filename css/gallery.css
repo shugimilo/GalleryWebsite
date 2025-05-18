@@ -1,0 +1,218 @@
+html {
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.buttons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.custom_input {
+    margin-top: 4px;
+    border: 0px;
+    border-bottom: 3px solid white;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+.image {
+    height: 250px;
+    margin: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > h3, p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.gallery > .gallery_upload {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    background-color: #50a363;
+}
+
+.gallery_upload input::placeholder,
+.gallery_upload input {
+    font-family: "Open Sans", sans-serif;
+}
+
+.gallery_title {
+    font-family: 'SisterSpray';
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.upload_button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.upload_button image {
+    height: 50px;
+    width: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+  
+.button-47 {
+    font-family: 'SisterSpray';
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(94, 233, 252);
+    padding: 10px 20px;
+    margin: 8px 8px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: font-size 0.3s;
+}
+
+.button-47.last-pressed {
+    font-family: 'SisterSpray';
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(94, 233, 252);
+    padding: 10px 20px;
+    margin: 8px 8px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: font-size 0.3s;
+    text-shadow: 0 0 5px rgb(156, 236, 247);
+}
+
+#sortByLikeBtn.button-47, #likedImages.button-47 {
+    font-family: 'SisterSpray';
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(74, 44, 211);
+    padding: 10px 20px;
+    margin: 8px 8px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: font-size 0.3s;
+}
+
+#sortByLikeBtn.button-47.last-pressed, #likedImages.button-47.last-pressed {
+    font-family: 'SisterSpray';
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(74, 44, 211);
+    padding: 10px 20px;
+    margin: 8px 8px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: font-size 0.3s;
+    text-shadow: 0 0 5px rgb(135, 108, 255);
+}
+
+#sortByDateBtn.button-47, #ownedImages.button-47 {
+    font-family: 'SisterSpray';
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(80, 233, 118);
+    padding: 10px 20px;
+    margin: 8px 8px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: font-size 0.3s;
+}
+
+#sortByDateBtn.button-47.last-pressed, #ownedImages.button-47.last-pressed {
+    font-family: 'SisterSpray';
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(80, 233, 118);
+    padding: 10px 20px;
+    margin: 8px 8px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: font-size 0.3s;
+    text-shadow: 0 0 5px rgb(170, 247, 189);
+}
+
+.button-47:active, #sortByLikeBtn.button-47:active, #likedImages.button-47:active, #sortByDateBtn.button-47:active, #ownedImages.button-47:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-47, #sortByLikeBtn.button-47, #likedImages.button-47, #sortByDateBtn.button-47, #ownedImages.button-47 {
+      padding: 0.25em 0.75em;
+    }
+  }
+
+.button-56 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: rgb(196, 27, 27);
+    color: white;
+    cursor: pointer;
+    padding: 0.25em 0.5em;
+    border: 2px solid rgb(253, 253, 253);
+    box-shadow: 1px 1px 0px 0px rgb(255, 255, 255), 
+    2px 2px 0px 0px rgb(255, 255, 255), 
+    3px 3px 0px 0px rgb(255, 255, 255), 
+    4px 4px 0px 0px rgb(255, 255, 255), 
+    5px 5px 0px 0px rgb(255, 255, 255);
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-56:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0.25em 0.75em;
+    }
+  }

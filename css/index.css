@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-size: 1.1em;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background: url('../images/utility/index_background6.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'SisterSpray';
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+  
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 0px;
+    height: 100vh;
+}
+
+#login{
+    margin-top: 100px;
+}
+  
+section {
+    background-color: black;
+    padding: 20px;
+    width: 300px;
+    max-width: 600px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #996633;
+}
+
+a:visited {
+    color: white;
+}
+
+.custom_input {
+    margin-top: 4px;
+    border: 0px;
+    border-bottom: 3px solid white;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+.custom_label {
+    color: white;
+    font-family: "Open Sans", sans-serif;;
+}
+
+.custom_form {
+    display: flex;
+    justify-content: left;
+}
+
+.anonymous_button {
+    display: flex;
+    justify-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
