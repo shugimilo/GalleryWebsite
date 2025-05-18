@@ -1,4 +1,4 @@
-# Gallery-Website
+# Gallery Website
 Third-year of studies project, part of the Web Application Programming course.
 <hr>
 <h2>Details</h2>
