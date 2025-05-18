@@ -1,5 +1,5 @@
 # Gallery-Website
-Third-year of studies project, in the subject of Programming Internet Applications
+Third-year of studies project, part of the Web Application Programming course.
 <hr>
 <h2>Details</h2>
 <h3>Description</h3>
