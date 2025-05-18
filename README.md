@@ -59,11 +59,65 @@ User actions are validated to prevent and handle errors gracefully:
 - Uploading a non-`.jpeg` or `.png` file as a profile or background image will display an error, as only these formats are supported.
 - Local storage limits are enforced for uploaded images.
 
-### Architectural Approach: Model-Object-View (MOV)
-The project follows a **Model-Object-View** (MOV) design, loosely inspired by MVC. It separates responsibilities as follows:
+### Architectural Approach: Model-View-Control (MVC)
+The project follows a simplified version of the Model-View-Control approach. It separates responsibilities as follows:
 - **Model classes** represent database entities such as users, images, comments, likes, ratings, and views. They contain protected methods for creating, reading, updating, and deleting records via **PDO**.
 - **Control classes** (e.g. `commentcontr.class.php`) extend the base models and implement public methods to interact with the front end. These combine logic and inline HTML to render forms, fetch data, and perform redirects.
 - This structure keeps database logic isolated while making it easy to extend and modify interactions at the UI level.
+
+### Bootstrap Usage
+When a user clicks on an image in order to view it, a bootstrap popup appears, dynamically displaying the image, along with:
+- Owner's information, title, description, date posted, number of likes, average ratings and comments.
+- The user (if eligible) can add/remove their like, change their rating and post a new comment.
+- Comments are interactable - if the commenter's profile picture is clicked, the user is led to their profile.
+- Comments also contain information about the poster's username and date created.
+
+## Security
+
+This application implements several essential security practices to protect user data and maintain safe sessions:
+
+### Session Hardening
+
+Session management is configured with enhanced security settings:
+
+- **Cookies only**: Sessions are restricted to cookies only (`session.use_only_cookies`).
+- **Strict mode**: Prevents uninitialized session IDs from being accepted (`session.use_strict_mode`).
+- **Secure cookie attributes**: 
+  - `secure: true` ensures cookies are only sent over HTTPS.
+  - `httponly: true` prevents JavaScript access to session cookies.
+- **Short lifetime**: Session cookies expire after 30 minutes of inactivity.
+- **Session ID regeneration**: The session ID is regenerated every 30 minutes to mitigate session fixation attacks.
+
+These settings are all configured in `config.inc.php`.
+
+---
+
+### Password Hashing
+
+Passwords are never stored in plaintext. During sign-up:
+
+- User passwords are securely hashed using `password_hash()` with PHP's default algorithm (currently bcrypt).
+- Hashes are stored in the database rather than the original passwords.
+
+This is handled in the `Signup` class (specifically in the `signUp()` method).
+
+---
+
+### Login Security
+
+- During login, credentials are validated using prepared SQL statements to prevent SQL injection.
+- Although the `LoginContr` class is not shown, it is expected to use `password_verify()` to compare the user’s input against the stored hashed password.
+
+---
+
+### SQL Injection Protection
+
+- All SQL queries are written using **prepared statements** with bound parameters (`bindValue()`), preventing SQL injection across both login and signup logic.
+
+---
+
+These measures collectively ensure a strong baseline of security for handling user authentication and session management.
+
 
 ---
 
