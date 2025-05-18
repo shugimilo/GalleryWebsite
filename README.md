@@ -159,7 +159,7 @@ This is handled in the `Signup` class (specifically in the `signUp()` method).
 ### Login Security
 
 - During login, credentials are validated using prepared SQL statements to prevent SQL injection.
-- Although the `LoginContr` class is not shown, it is expected to use `password_verify()` to compare the user’s input against the stored hashed password.
+- The `LoginContr` uses `password_verify()` to compare the user’s input against the stored hashed password.
 
 ---
 
@@ -170,7 +170,6 @@ This is handled in the `Signup` class (specifically in the `signUp()` method).
 ---
 
 These measures collectively ensure a strong baseline of security for handling user authentication and session management.
-
 
 ---
 
