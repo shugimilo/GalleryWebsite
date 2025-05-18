@@ -81,7 +81,7 @@ This feature has been implemented through PHPMailer. Instructions on how to set 
 
 ## Demonstration
 
-
+![Demo 1](https://i.imgur.com/K3rH59V.gif)
 
 ---
 
