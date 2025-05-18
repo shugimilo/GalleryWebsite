@@ -22,10 +22,7 @@ This project is built to run using **XAMPP** and **localhost**. Follow the steps
 - Start **Apache**.
 - Start **MySQL** (if your project uses a database).
 
-### 3. Open the Website
-- In your web browser, go to: http://localhost/your_project_folder/
-
-### 4. Set Up the Database
+### 3. Set Up the Database
 - Open **phpMyAdmin** by visiting: http://localhost/phpmyadmin
 - Create a new database (e.g., `my_project_db`).
 - Import the SQL file provided with the project:
@@ -34,6 +31,9 @@ This project is built to run using **XAMPP** and **localhost**. Follow the steps
   3. Upload and run the `.sql` file (usually found in the root or `database/` folder of the project).
 
 **Note:** Ensure that the database connection details in your configuration file (e.g., `Database.php` or `config.inc.php`) match the name and credentials of the database you just created.
+
+### 4. Open the Website
+- In your web browser, go to: http://localhost/your_project_folder/
 
 ---
 
