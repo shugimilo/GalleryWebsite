@@ -42,7 +42,7 @@ This website functions as a digital gallery where users can explore, rate, and c
 - Form handling and input validation.
 - Basic security against SQL injection and XSS.
 - Image/file uploads and server-side storage.
-- Email integration (e.g. for account verification).
+- Email integration for password reset.
 - Modular structure using PHP templates.
 
 ---
