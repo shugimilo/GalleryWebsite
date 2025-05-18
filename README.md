@@ -83,6 +83,20 @@ This feature has been implemented through PHPMailer. Instructions on how to set 
 
 ![Demo 1](https://i.imgur.com/K3rH59V.gif)
 
+![Demo 2](https://i.imgur.com/BOKaSa4.gif)
+
+![Demo 3](https://i.imgur.com/TAWZnwL.gif)
+
+![Demo 4](https://i.imgur.com/V0XWKTC.gif)
+
+![Demo 5](https://i.imgur.com/eifL7hA.gif)
+
+![Demo 6](https://i.imgur.com/ZrNyIxK.gif)
+
+![Demo 7](https://i.imgur.com/peiKAGf.gif)
+
+![Demo 8](https://i.imgur.com/LX5DhVx.gif)
+
 ---
 
 ## Security
